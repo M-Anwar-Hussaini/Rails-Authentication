@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'static/home'
+  resources :sessions, only: [:create]
   root "static#home"
 end
